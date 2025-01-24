@@ -17,3 +17,11 @@
 4. Fixed template rendering:
     - Changed template name from "dash.html" to "dashboard.html" to match the actual file
     - Fixed the template variables (removed subjects parameter as it's not used in the template)
+  
+5. Added application entry point:
+   - Included the `if __name__ == '__main__'`: block to run the application with debugging enabled:
+        ```python
+        if __name__ == '__main__':
+            app.run(debug=True)
+        ```
+
