@@ -3,14 +3,19 @@ import requests
 
 app = Flask(__name__)
 
-API_BASE_URL = "http://localhost:8000"
+API_BASE_URL = "http://localhost:8000/api"
 
 
 @app.route("/")
 def dashboard():
-    students = requests.get(f"{API_BASE_URL}/stu/").json()
-    subjects = requests.get(f"{API_BASE_URL}/sub/").json()
-    grades = requests.get(f"{API_BASE_URL}/gra/").json()
+    try:
+        students = requests.get(f"{API_BASE_URL}/students/").json()
+        subjects = requests.get(f"{API_BASE_URL}/subjects/").json()
+        grades = requests.get(f"{API_BASE_URL}/grades/").json()
+    except requests.exceptions.ConnectionError:
+        return "Error: Cannot connect to Django API. Please ensure Django server is running on port 8000."
+    except requests.exceptions.JSONDecodeError:
+        return "Error: Invalid response from API. Please check API endpoints."
 
     student_grades = {student["id"]: [] for student in students}
     for grade_entry in grades:
@@ -33,5 +38,6 @@ def dashboard():
 
     return render_template("dashboard.html", students=student_data)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
+if __name__ == "__main__":
+    app.run(debug=True, port=5000)

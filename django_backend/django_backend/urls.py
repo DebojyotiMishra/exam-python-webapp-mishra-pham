@@ -2,7 +2,6 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from grades.views import StudentViewSet, SubjectViewSet, GradeViewSet
-from django.views.generic import RedirectView
 
 router = DefaultRouter()
 router.register(r'students', StudentViewSet)
@@ -12,6 +11,4 @@ router.register(r'grades', GradeViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    # Redirect root URL to API root
-    path('', RedirectView.as_view(url='api/', permanent=False)),
 ] 
