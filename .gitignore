@@ -1,0 +1,32 @@
+# Python cache files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Media and static files
+media/
+staticfiles/
+
+# SQLite database files
+*.sqlite3
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
+*.out
+*.err
+
+# Django static and media files
+staticfiles/
+media/
+
+
