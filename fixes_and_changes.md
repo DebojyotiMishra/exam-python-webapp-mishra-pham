@@ -24,6 +24,9 @@
         if __name__ == '__main__':
             app.run(debug=True)
         ```
+6. Enhanced grade table display:
+    - Added a ranking column to display the rank of each student
+    - Applied CSS for improved visualization
 
 # Django Setup and Changes
 

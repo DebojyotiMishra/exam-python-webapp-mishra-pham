@@ -36,10 +36,10 @@ def dashboard():
         for student_id, average in averages.items()
     ]
     student_data.sort(key=lambda x: x["average"], reverse=True)
-    
+
     for index, student in enumerate(student_data):
         student["rank"] = index + 1
-        
+
     return render_template("dashboard.html", students=student_data)
 
 
