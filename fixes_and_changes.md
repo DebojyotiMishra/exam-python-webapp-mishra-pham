@@ -1,4 +1,11 @@
-# Fixes
+# Fixes and Changes of the project
+
+###### Group member:
+- Pham Phuong Khanh
+- Debojyoti Mishra
+---
+
+### Fixes
 
 1. Added missing imports:
     - requests for making HTTP requests
@@ -28,7 +35,7 @@
     - Added a ranking column to display the rank of each student
     - Applied CSS for improved visualization
 
-# Django Setup and Changes
+### Django Setup and Changes
 
 1. Initial Setup:
     - Created Django project using `django-admin startproject django_backend`
@@ -60,7 +67,7 @@
     - Registered models in admin.py for easy data management
     - Customized admin views for better usability
 
-# Deployment Instructions
+### Deployment Instructions
 
 1. Django Backend:
     ```bash
