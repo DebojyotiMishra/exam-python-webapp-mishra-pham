@@ -13,6 +13,7 @@
     <table border="1">
         <thead>
             <tr>
+                <th>Rank</th>
                 <th>Étudiant</th>
                 <th>Moyenne</th>
             </tr>
@@ -20,6 +21,7 @@
         <tbody>
             {% for student in students %}
             <tr>
+                <td>{{ student.rank }}</td>
                 <td>{{ student.name }}</td>
                 <td>{{ student.average|round(2) }}</td>
             </tr>

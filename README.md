@@ -10,7 +10,7 @@ A modern web-based school grade management system built with Django REST Framewo
 
 ## Project Structure
 ```bash
-├── Flask project to fix
+├── flask_frontend
 │   ├── __pycache__
 │   │   └── app.cpython-311.pyc
 │   ├── app.py
