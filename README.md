@@ -6,7 +6,7 @@ A modern web-based school grade management system built with Django REST Framewo
 
 ## Team member Names
 1. Debojyoti Mishra
-2. Phuong Khanh Pham
+2. Pham Phuong Khanh
 
 ## Project Structure
 ```bash
