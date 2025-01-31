@@ -10,6 +10,8 @@ A modern web-based school grade management system built with Django REST Framewo
 
 ---
 
+<br>
+
 ## Project Structure
 ```bash
 ├── flask_frontend
@@ -54,6 +56,7 @@ A modern web-based school grade management system built with Django REST Framewo
 │       └── wsgi.py
 ├── fixes_and_changes.md
 ```
+<br>
 
 ## Project Overview
 
@@ -71,6 +74,8 @@ The Flask application:
 - Provides a user-friendly dashboard
 - Visualizes student performance data
 
+<br>
+
 ## Technical Stack
 
 ### Backend
@@ -85,6 +90,8 @@ The Flask application:
 - Requests library
 - Jinja2 templating
 
+<br>
+
 ## Installation & Setup
 
 ### 1. Clone the Repository
@@ -94,59 +101,61 @@ cd exam-python-webapp-mishra-pham
 ```
 
 ### 2. Backend Setup (Django)
-### Create and activate virtual environment
+#### Create and activate virtual environment
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-### Navigate to Django project
+#### Navigate to Django project
 ```bash
 cd django_backend
 ```
 
-### Install dependencies
+#### Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run migrations
+#### Run migrations
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-### Create superuser
+#### Create superuser
 ```bash
 python manage.py createsuperuser
 ```
 
-### Start Django server
+#### Start Django server
 ```bash
 python manage.py runserver 8000
 ```
 
-## 2. Frontend Setup (Flask)
+### 3. Frontend Setup (Flask)
 
-### In a new terminal, activate virtual environment
+#### In a new terminal, activate virtual environment
 ```bash
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-### Navigate to Flask project
+#### Navigate to Flask project
 ```bash
 cd ../Flask\ project\ to\ fix
 ```
 
-### Install Flask dependencies
+#### Install Flask dependencies
 ```bash
 pip install flask requests
 ```
 
-### Start Flask server
+#### Start Flask server
 ```bash
 python app.py
 ```
+
+<br>
 
 ## API Endpoints
 
@@ -170,6 +179,7 @@ The Django backend provides the following REST API endpoints:
 - **PUT/PATCH**: Update grade
 - **DELETE**: Remove grade
 
+<br>
 
 ## Data Models
 
@@ -186,6 +196,8 @@ The Django backend provides the following REST API endpoints:
 - `subject`: Foreign key to Subject
 - `grade`: Numerical grade value
 - `date`: Date of grade entry
+
+<br>
 
 ## Features
 
@@ -206,6 +218,8 @@ The Django backend provides the following REST API endpoints:
 - Average grade calculations
 - Performance visualization
 - Responsive design
+
+<br>
 
 ## Work Summary
 
@@ -271,6 +285,8 @@ Organized backend and frontend into separate folders.
 5. Admin Interface:
     - Registered models in admin.py for easy data management
     - Customized admin views for better usability
+
+<br>
 
 ## Challenges & Solutions
 - **CORS Errors:** Fixed with **django-cors-headers**.
