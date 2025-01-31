@@ -12,7 +12,7 @@ A modern web-based school grade management system built with Django REST Framewo
 
 <br>
 
-## Project Structure
+## A. Project Structure
 ```bash
 ├── flask_frontend
 │   ├── __pycache__
@@ -58,7 +58,7 @@ A modern web-based school grade management system built with Django REST Framewo
 ```
 <br>
 
-## Project Overview
+## B. Project Overview
 
 ### Backend (Django)
 The Django application provides:
@@ -76,7 +76,7 @@ The Flask application:
 
 <br>
 
-## Technical Stack
+## C. Technical Stack
 
 ### Backend
 - Python 3.8+
@@ -92,7 +92,7 @@ The Flask application:
 
 <br>
 
-## Installation & Setup
+## D. Installation & Setup
 
 ### 1. Clone the Repository
 ```bash
@@ -157,7 +157,7 @@ python app.py
 
 <br>
 
-## API Endpoints
+## E. API Endpoints
 
 The Django backend provides the following REST API endpoints:
 
@@ -181,7 +181,7 @@ The Django backend provides the following REST API endpoints:
 
 <br>
 
-## Data Models
+## F. Data Models
 
 ### Student
 - `name`: Student's full name
@@ -199,7 +199,7 @@ The Django backend provides the following REST API endpoints:
 
 <br>
 
-## Features
+## G. Features
 
 ### Admin Interface
 - Accessible at `/admin/`
@@ -221,7 +221,7 @@ The Django backend provides the following REST API endpoints:
 
 <br>
 
-## Work Summary
+## H. Work Summary
 
 Organized backend and frontend into separate folders.
 
@@ -288,7 +288,7 @@ Organized backend and frontend into separate folders.
 
 <br>
 
-## Challenges & Solutions
+## I. Challenges & Solutions
 - **CORS Errors:** Fixed with **django-cors-headers**.
 - **Database Relationships:** Used **Foreign Keys** to link Students, Subjects, and Grades.
 - **Frontend-Backend Integration:** Managed **HTTP requests and API responses** in Flask.
