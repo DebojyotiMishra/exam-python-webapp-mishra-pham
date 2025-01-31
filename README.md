@@ -4,9 +4,11 @@ A modern web-based school grade management system built with Django REST Framewo
 - A Django backend providing a REST API and admin interface for managing student data
 - A Flask frontend for visualizing student performance and grades
 
-## Team member Names
+### Team member Names
 1. Debojyoti Mishra
 2. Pham Phuong Khanh
+
+---
 
 ## Project Structure
 ```bash
